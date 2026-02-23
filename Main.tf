@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "my_ec2" {
-  ami           = "ami-051a31ab2f4d498f5"   
+  ami           = ""   
   instance_type = "t2.micro"
 
-  key_name = "Mumbai-key"   
+  key_name = ""   
 
   security_groups = ["default"]
 
@@ -15,4 +15,5 @@ resource "aws_instance" "my_ec2" {
   tags = {
     Name = "Mahaa-Terraform-EC2"
   }
+
 }
